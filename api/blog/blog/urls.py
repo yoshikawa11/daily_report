@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import re_path, include  #追加
+from django.conf import settings #追加
+from django.contrib.staticfiles.urls import static #追加
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns #追加
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    re_path(r'^api/',   include('articles.urls')), #追加
 ]
