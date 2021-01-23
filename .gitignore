@@ -3,4 +3,5 @@ api/blog/blog/settings.py
 __pycache__/
 db/
 mysql/
+frontend/.env
 frontend/blog/.eslintcache
