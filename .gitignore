@@ -4,4 +4,7 @@ __pycache__/
 db/
 mysql/
 frontend/.env
+# Optional eslint cache
 frontend/blog/.eslintcache
+# Dependency directories
+node_modules/
